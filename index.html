@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logoFace.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Facebook</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="./images/logoFace.png" alt="Logo">
+            <input type="text" placeholder="Buscador">
+        </div>
+
+        <div class="nav-middle">
+            <a href="#" class="active">
+                <i class="fa fa-home"></i>
+            </a>
+
+            <a href="amigos.html">
+                <i class="fa fa-user-friends"></i>
+            </a>
+
+            <a href="videos.html">
+                <i class="fa fa-play-circle"></i>
+            </a>
+
+            <a href="grupos.html">
+                <i class="fa fa-users"></i>
+            </a>
+        </div>
+
+        <div class="nav-right">
+            <a href="perfil.html">
+            <span class="profile"></span>
+        </a>
+        <div class="notification">
+            <a href="#" id="notification-icon" onclick="toggleNotifications()">
+                <i class="fas fa-bell">
+                    <span class="notification-dot"></span>
+                </i>
+            </a>
+
+            <div class="notification-menu" id="notification-menu">
+                <h2>Notificaciones</h2>
+                <span class="trespnts">...</span>
+                <div class="notification-buttons">
+                    <button class="btn"><b>Todas</b></button>
+                    <button class="btn"><b>No leídas</b></button>
+                </div><br>
+                <h3>Anteriores</h3>
+                <span class="vertodo">Ver todo</span>
+                <ul>
+                    <!-- Aquí puedes agregar tus notificaciones -->
+                    <li><div class="notification">
+                        <img src="./images/perfil6.jpeg" alt="Notificación 1">
+                        <p><b>Santiago</b> agregó una publicación.</p>
+                    </div></li>
+                    <li><div class="notification">
+                        <img src="./images/perfil4.jpg" alt="Notificación 2">
+                        <p><b>Andrea Rivas</b> comentó en tu publicación.</p>
+                    </div></li>
+                    <li><div class="notification">
+                        <img src="./images/perfil5.png" alt="Notificación 3">
+                        <p><b>Pablo Escobar</b> te mencionó en una publicación.</p>
+                    </div></li>
+                    <li><div class="notification">
+                        <img src="./images/perfil9.jpg" alt="Notificación 4">
+                        <p><b>Mariana Cavas</b> reaccionó a tu comentario.</p>
+                    </div></li>
+                    <li><div class="notification">
+                        <img src="./images/perfil10.jpg" alt="Notificación 5">
+                        <p><b>Maria Paz</b> publicó un video nuevo.</p>
+                    </div></li>
+                    <li><div class="notification">
+                        <img src="./images/perfil11.jpg" alt="Notificación 6">
+                        <p><b>Juanita Vivas</b> compartió la publicación de <b>Cartagena</b>.</p>
+                    </div></li>
+                </ul>
+            </div>
+        </div>
+            
+
+            <a href="#" id="ellipsis-icon" onclick="toggleDropdown()">
+                <i class="fas fa-ellipsis-h"></i>
+            </a>
+            <div class="dropdown-menu" id="dropdown-menu">
+                <h2>Menú</h2>
+                <div class="dropdown-columns-container">
+                    <div class="dropdown-column column1">
+                        <ul>
+                            <li> 
+                            <div class="buscadorMenu">
+                                <input class="input-with-icon" type="text" placeholder="Busca en el munú"><br><br>
+                                <h4>Social</h4>
+                                <div class="custom-content">
+                                    <img src="./images/eventos.png" alt="Tu imagen" >
+                                    <div class="text-content">
+                                    <h5>Eventos</h5>
+                                    <p>Organiza o busca eventos y otras cosas para<br>
+                                       hacer online y cerca de ti.
+                                    </p>
+                                    </div>
+                                </div>
+
+                                <div class="custom-content">
+                                    <img src="./images/amigos.png" alt="Tu imagen" >
+                                    <div class="text-content">
+                                    <h5>Amigos</h5>
+                                    <p>Busca amigos o personas que quizá conozcas.</p>
+                                
+                                    </div>
+                                </div>
+
+                                <div class="custom-content">
+                                    <img src="./images/grupos.png" alt="Tu imagen" >
+                                    <div class="text-content">
+                                    <h5>Grupos</h5>
+                                    <p>Conectate con personas que compartan tus<br>
+                                       mismos intereses
+                                    </p>
+                                    </div>
+                                </div>
+
+                                <div class="custom-content">
+                                    <img src="./images/noticias.png" alt="Tu imagen" >
+                                    <div class="text-content">
+                                    <h5>Noticias</h5>
+                                    <p>Mira las publicaciones de personas y<br>
+                                       páginas que sigues.
+                                    </p>
+                                    </div>
+                                </div>
+
+                                <div class="custom-content">
+                                    <img src="./images/feeds.png" alt="Tu imagen" >
+                                    <div class="text-content">
+                                    <h5>Feeds</h5>
+                                    <p>Mira las publicaciones más recientes de tus<br>
+                                       amigos, grupos, páginas y mucho más.
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                            </li>
+                        </ul>
+                    </div>
+            
+                    <div class="dropdown-column column2">
+                        <ul>
+                            <li> 
+                            <div class="buscadorMenu">
+                                
+                                <h3>Crear</h3>
+                                <div class="custom-content1">
+                                    <img src="./images/publicacion.png" alt="Tu imagen" >
+                                    <div class="text-content">
+                                    <h5>Publicación</h5>
+                                    </div>
+                                </div>
+
+                                <div class="custom-content1">
+                                    <img src="./images/historia.png" alt="Tu imagen" >
+                                    <div class="text-content">
+                                    <h5>Historia</h5>
+                                
+                                    </div>
+                                </div>
+
+                                <div class="custom-content1">
+                                    <img src="./images/reel.png" alt="Tu imagen" >
+                                    <div class="text-content">
+                                    <h5>Reel</h5>
+                                
+                                    </div>
+                                </div>
+
+                                <div class="custom-content1">
+                                    <img src="./images/aconte.png" alt="Tu imagen" >
+                                    <div class="text-content">
+                                    <h5>Acontecimiento<br>
+                                        importante
+                                    </h5>
+                                    
+                                    </div>
+                                </div>
+
+                                <div class="custom-content1">
+                                    <img src="./images/pagina1.png" alt="Tu imagen" >
+                                    <div class="text-content">
+                                    <h5>Pagina</h5>
+                                    
+                                    </div>
+                                </div>
+
+                                <div class="custom-content1">
+                                    <img src="./images/anuncio.png" alt="Tu imagen" >
+                                    <div class="text-content">
+                                    <h5>Pagina</h5>
+                                    
+                                    </div>
+                                </div>
+
+                                <div class="custom-content1">
+                                    <img src="./images/grupo1.png" alt="Tu imagen" >
+                                    <div class="text-content">
+                                    <h5>Pagina</h5>
+                                    
+                                    </div>
+                                </div>
+
+                                <div class="custom-content1">
+                                    <img src="./images/evento1.png" alt="Tu imagen" >
+                                    <div class="text-content">
+                                    <h5>Pagina</h5>
+                                    
+                                    </div>
+                                </div>
+
+                    
+                            </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="left-panel">
+            <ul>
+                <li>
+                    <span class="profile"></span>
+                    <p>Miguel Puentes</p>
+                </li>
+                <li>
+                    <i class="fa fa-user-friends"></i>
+                    <p>Amigos</p>
+                </li>
+                <li>
+                    <i class="fa fa-play-circle"></i>
+                    <p>Videos</p>
+                </li>
+                <li>
+                    <i class="fa fa-flag"></i>
+                    <p>Paginas</p>
+                </li>
+                <li>
+                    <i class="fa fa-users"></i>
+                    <p>Grupos</p>
+                </li>
+                <li>
+                    <i class="fa fa-bookmark"></i>
+                    <p>Marcador</p>
+                </li>
+                <li>
+                    <i class="fab fa-facebook-messenger"></i>
+                    <p>Messenger</p>
+                </li>
+                <li>
+                    <i class="fas fa-calendar-week"></i>
+                    <p>Eventos</p>
+                </li>
+                <li>
+                    <i class="fa fa-bullhorn"></i>
+                    <p>Anuncios</p>
+                </li>
+                <li>
+                    <i class="fas fa-hands-helping"></i>
+                    <p>Ofertas</p>
+                </li>
+                <li>
+                    <i class="fas fa-briefcase"></i>
+                    <p>Trabajos</p>
+                </li>
+                <li>
+                    <i class="fa fa-star"></i>
+                    <p>Favoritos</p>
+                </li>
+            </ul>
+
+
+        </div>
+
+
+        <div class="middle-panel">
+
+            <div class="story-section">
+
+                <div class="story create">
+                    <div class="dp-image">
+                        <img src="./images/dp.jpg" alt="Profile pic">
+                    </div>
+                    <span class="dp-container">
+                        <i class="fa fa-plus"></i>
+                    </span>
+                    <span class="name">Crear historia</span>
+                </div>
+
+
+                <div class="story">
+                    <img src="./images/model.jpg" alt="Anuska's story">
+                    <div class="dp-container">
+                        <img src="./images/girl.jpg" alt="">
+                    </div>
+                    <p class="name">Sofia Vargas</p>
+                </div>
+
+                <div class="story">
+                    <img src="./images/boy.jpg" alt="Story image">
+                    <span class="dp-container">
+                        <img src="./images/dp.jpg" alt="Profile pic">
+                    </span>
+                    <span class="name">Gabriel Perez</span>
+                </div>
+
+                <div class="story">
+                    <img src="./images/mountains.jpg" alt="Story image">
+                    <span class="dp-container">
+                        <img src="./images/boy.jpg" alt="Profile pic">
+                    </span>
+                    <span class="name">Pablo Olaya</span>
+                </div>
+
+                <div class="story">
+                    <img src="./images/shoes.jpg" alt="Story image">
+                    <span class="dp-container">
+                        <img src="./images/model.jpg" alt="Profile pic">
+                    </span>
+                    <span class="name">Santiago Sánchez</span>
+                </div>
+            </div>
+
+            <div class="post create">
+                <div class="post-top">
+                    <div class="dp">
+                        <img src="./images/dp.jpg" alt="">
+                    </div>
+                    <input type="text" placeholder="Que estas pensando, Miguel?" />
+                </div>
+                
+                <div class="post-bottom">
+                    <div class="action">
+                        <i class="fa fa-video"></i>
+                        <span>En vivo</span>
+                    </div>
+                    <div class="action">
+                        <i class="fa fa-image"></i>
+                        <span>Foto/Video</span>
+                    </div>
+                    <div class="action">
+                        <i class="fa fa-smile"></i>
+                        <span>Actividad</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-top">
+                    <div class="dp">
+                        <img src="./images/girl.jpg" alt="">
+                    </div>
+                    <div class="post-info">
+                        <p class="name">Sofia Vargas</p>
+                        <span class="time">Hace 12 horas</span>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+
+                <div class="post-content">
+                    El invento mas importante de mi artista favorito:<br>
+                    El ornitóptero es seguramente la máquina más famosa<br>
+                     de Leonardo da Vinci. Estudió en profundidad la anatomía<br> 
+                     de los pájaros, pero nunca logró crear uno funcional.
+                </div>
+                
+                <div class="post-bottom">
+                    <div class="action">
+                        <i class="far fa-thumbs-up"></i>
+                        <span>Me gusta</span>
+                    </div>
+                    <div class="action">
+                        <i class="far fa-comment"></i>
+                        <span>Comentar</span>
+                    </div>
+                    <div class="action">
+                        <i class="fa fa-share"></i>
+                        <span>Compartir</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-top">
+                    <div class="dp">
+                        <img src="./images/dp.jpg" alt="">
+                    </div>
+                    <div class="post-info">
+                        <p class="name">Miguel Puentes</p>
+                        <span class="time">Hace 24 horas</span>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+
+                <div class="post-content">
+                    Que montañas tan asombrosas!
+                    <img src="images/mountains.jpg" />
+                </div>
+                
+                <div class="post-bottom">
+                    <div class="action">
+                        <i class="far fa-thumbs-up"></i>
+                        <span>Me gusta</span>
+                    </div>
+                    <div class="action">
+                        <i class="far fa-comment"></i>
+                        <span>Comentar</span>
+                    </div>
+                    <div class="action">
+                        <i class="fa fa-share"></i>
+                        <span>Compartir</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-top">
+                    <div class="dp">
+                        <img src="./images/boy.jpg" alt="">
+                    </div>
+                    <div class="post-info">
+                        <p class="name">Gabriel Perez</p>
+                        <span class="time">Hace una semana</span>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="post-content">
+                    Feliz cimpleaños lu
+                    <img src="./images/girl_with_light.jpg" alt="Mountains">
+                </div>
+                <div class="post-bottom">
+                    <div class="action">
+                        <i class="far fa-thumbs-up"></i>
+                        <span>Me gusta </span>
+                    </div>
+                    <div class="action">
+                        <i class="far fa-comment"></i>
+                        <span>Comentar</span>
+                    </div>
+                    <div class="action">
+                        <i class="fa fa-share"></i>
+                        <span>Compartir</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-top">
+                    <div class="dp">
+                        <img src="./images/model.jpg" alt="">
+                    </div>
+                    <div class="post-info">
+                        <p class="name">Sofia Vargas</p>
+                        <span class="time">5 mins ago</span>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="post-content">
+                    Buenos dias para todos, estoy rifando unas botas CAT
+                    <img src="./images/shoes.jpg" alt="Shoes">
+                </div>
+                <div class="post-bottom">
+                    <div class="action">
+                        <i class="far fa-thumbs-up"></i>
+                        <span>Me gusta</span>
+                    </div>
+                    <div class="action">
+                        <i class="far fa-comment"></i>
+                        <span>Comentar</span>
+                    </div>
+                    <div class="action">
+                        <i class="fa fa-share"></i>
+                        <span>Compartir</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="right-panel">
+            <div class="pages-section">
+                <h4>Mis grupos</h4>
+                <a class='page' href="#">
+                    <div class="dp">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <p class="name">Codigofacilito</p>
+                </a>
+
+                <a class='page' href="#">
+                    <div class="dp">
+                        <img src="./images/dp.jpg" alt="">
+                    </div>
+                    <p class="name">Tutoriales</p>
+                </a>
+            </div>
+
+            <div class="friends-section">
+                <h4>Amigos</h4>
+                <a class='friend' href="#">
+                    <div class="dp">
+                        <img src="./images/dp.jpg" alt="">
+                    </div>
+                    <p class="name">Miguel Puentes</p>
+                </a>
+
+                <a class='friend' href="#">
+                    <div class="dp">
+                        <img src="./images/shoes.jpg" alt="">
+                    </div>
+                    <p class="name">Edwin Puentes</p>
+                </a>
+
+                <a class="friend" href="#">
+                    <div class="dp">
+                        <img src="./images/boy.jpg" alt="">
+                    </div>
+                    <p class="name">Gabriel Perez</p>
+                </a>
+
+                <a class="friend" href="#">
+                    <div class="dp">
+                        <img src="./images/model.jpg" alt="">
+                    </div>
+                    <p class="name">Sofia Vargas</p>
+                </a>
+
+                <a class="friend" href="#">
+                    <div class="dp">
+                        <img src="./images/flowers.jpg" alt="">
+                    </div>
+                    <p class="name">Santiago Muñoz</p>
+                </a>
+
+                <a class="friend" href="#">
+                    <div class="dp">
+                        <img src="./images/mountains.jpg" alt="">
+                    </div>
+                    <p class="name">Pipe Lopez</p>
+                </a>
+
+    
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
