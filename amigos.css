@@ -1,0 +1,272 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav{
+    height:70px;
+    width:100%;
+    padding: 0 2rem;
+    display:flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px #ffffff;
+    position:sticky;
+    top:0;
+    z-index:99;
+}
+
+nav .nav-left, nav .nav-right{
+    display:flex;
+    align-items: center;
+}
+
+nav .nav-left > img{
+    width:40px;
+}
+
+nav .nav-left > input{
+    height:40px;
+    padding:5px 10px;
+    border:none;
+    border-radius: 25px;
+    outline:none;
+    background-color: #f0f0f0;
+    margin-left: 10px;
+}
+
+nav .nav-middle{
+    display:flex;
+    align-items:flex-end;
+    padding-bottom: 5px;
+}
+
+nav .nav-middle a{
+    text-decoration: none;
+    color:#333;
+    padding:10px;
+    margin:0px 10px;
+}
+
+nav .nav-middle a.active{
+    color:royalblue;
+    position:relative;
+}
+
+nav .nav-middle a.active::after{
+    content:'';
+    width:100%;
+    height:3px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    background:royalblue;
+}
+
+nav .nav-middle a > i{
+    font-size: 25px;
+}
+
+nav .nav-right .profile, .container .left-panel .profile{
+    background: url('./images/dp.jpg');
+    height:30px;
+    width:30px;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav .nav-right a{
+    text-decoration: none;
+    color:#333;
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    background:#eee;
+    display:grid;
+    place-items: center;
+    margin-left:1rem;
+}
+
+nav .nav-right a > i{
+    font-size:18px;
+}
+
+.navbar {
+    position: fixed; /* Fija la barra de navegación */
+    top: 0; /* La fija en la parte superior de la ventana del navegador */
+    width: 100%; /* Ancho completo */
+    background-color: #333; /* Cambia el color de fondo según tu preferencia */
+    z-index: 100; /* Asegura que esté encima de otros elementos */
+}
+
+.content {
+    padding-top: 60px; /* Agrega un relleno en la parte superior del contenido para evitar que se superponga con la barra de navegación */
+}
+
+
+.container{
+    background:#f0f0f0;
+    display:flex;
+}
+
+.left-panel ul li strong {
+    font-size: 25px; /* Puedes ajustar este valor según tus necesidades */
+}
+
+/* Aumenta el espacio interno a la derecha en el div left-panel */
+.left-panel {
+    padding-right: 1px; /* Ajusta la cantidad de espacio a tu preferencia */
+}
+
+
+.left-panel p {
+    font-size: 20px;
+}
+
+
+
+.container .left-panel, .container .right-panel{
+    position: sticky;
+    top:70px;
+    width:370px;
+    height:calc(100vh - 70px);
+}
+
+.icono-amigos i {
+    margin-right: 200px; /* Puedes ajustar el valor según la separación deseada */
+}
+
+
+.container .left-panel ul{
+    padding:10px 0px;
+}
+
+.container .left-panel ul li{
+    list-style: none;
+    display: flex;
+    padding:.7rem 1rem;
+    align-items: center;
+    transition: .3s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container .left-panel ul li:hover{
+    background:#c8c0c0;
+}
+
+.container .left-panel ul li > p{
+    margin-left: 10px;
+}
+
+.container .left-panel ul li > i{
+    font-size:20px;
+    color:rgb(18, 19, 18);
+}
+
+.container .left-panel ul li > i.fa-calendar-week{
+    color:rgb(0, 0, 0);
+}
+
+.container .left-panel ul li i.fa-briefcase{
+    color:rgb(0, 0, 0);
+}
+
+.container .left-panel ul li i.fa-star{
+    color:rgb(0, 0, 0);
+}
+
+.container .left-panel ul li i.fa-hands-helping{
+    color:indianred;
+}
+
+.container .left-panel .footer-links{
+    padding:5px 1rem;
+}
+
+.container .left-panel .footer-links a{
+    text-decoration: none;
+    color:#333;
+    font-size:12px;
+}
+
+
+/* Estilos para la sección de personas sugeridas */
+.suggested-friends {
+    background: #f0f0f0;
+    padding: 10px;
+    margin-left: 20px;
+    flex-grow: 1;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.suggested-friends h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Agrega el siguiente estilo CSS para las imágenes de las personas */
+.suggested-friends .friend {
+    display: inline-block; /* Muestra las imágenes en línea (horizontalmente) */
+    margin-right: 20px; /* Añade un margen derecho entre las imágenes */
+    vertical-align: top; /* Alinea las imágenes en la parte superior */
+}
+
+/* Estilo opcional para evitar que la última imagen tenga margen derecho */
+.suggested-friends .friend:last-child {
+    margin-right: 0;
+}
+
+
+.friend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.friend img {
+    width: 155px;
+    height: 155px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.friend h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.friend p {
+    font-size: 14px;
+    color: #888;
+    margin: 5px 0;
+}
+
+.eliminar {
+    background-color: #f0f0f0;
+}
+
+
+.friend button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.friend-box {
+    border: 1px solid #000000; /* Agrega un borde */
+    padding: 10px; /* Añade espacio alrededor del contenido */
+    border-radius: 5px; /* Aplica esquinas redondeadas */
+    background-color: #ffffff; /* Define un color de fondo */
+}

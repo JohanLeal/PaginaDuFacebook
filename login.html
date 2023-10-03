@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Inicia sesión o registrate</title> 
+    <link rel="stylesheet" href="styles_login.css">
+    <script src="script.js"></script>
+    <link rel="shortcut - icon" href="/images/facebook.ico"><!--corregir el icono-->
+</head>
+<body> 
+    <div class="contenedor">
+        <div class="col1">
+            <img src="logo.svg" alt="" class="logo">
+            <p>Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida</p>
+        </div>
+        <div class="col2">
+            <form>
+                <input type="text" placeholder="Correo electrónico o número de teléfono" required>
+                <input type="password" placeholder="Contraseña" required>
+                <a href="index.html" class="iniciar">Iniciar sesión</a>
+                <a href="#" class="olvidaste">¿Has olvidado la contraseña?</a>
+                <hr>
+                <a href="#" class="nueva">Crear cuenta nueva</a>
+            </form>
+            <p><strong>Crea una página</strong> para un famoso, una marca o un negocio</p>
+        </div>
+    </div>
+<!-- Formulario emergente -->
+<div class="overlay" id="overlay">
+    <div class="formularioemergente" id="formularioemergente">
+        <span class="cerrar" id="cerrar">&times;</span>
+        <h2>Registrarte</h2>
+        <p>Es rápido y fácil.</></p>
+        <hr>
+        <form id="registroForm">
+            <div class="nombre-apellido">
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Apellido">
+            </div>
+            <input type="tel" placeholder="Número de teléfono">
+            <input type="password" placeholder="Contraseña nueva">
+            <p><small>Fecha de nacimiento</small></p>
+            <div class="fecha-nacimiento">
+            <div class="campo-fecha">
+            <select id="dia" name="dia">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+            </div>
+            <div class="campo-fecha">
+            <select id="mes" name="mes">
+                <option value="01">ene</option>
+                <option value="02">feb</option>
+                <option value="03">mar</option>
+                <option value="04">abr</option>
+                <option value="05">may</option>
+                <option value="06">jun</option>
+                <option value="07">jul</option>
+                <option value="08">ago</option>
+                <option value="09">sep</option>
+                <option value="10">oct</option>
+                <option value="11">nov</option>
+                <option value="12">dic</option>
+            </select>
+            </div>
+            <div class="campo-fecha">
+            <select id="a" name="a">
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+                <option value="1999">1999</option>
+            </select>
+            </div>
+            </div>
+            <p><small>Género</small></p>
+            <div class="genero-buttons">
+                <label>
+                    <input type="radio" name="genero" value="masculino"> Mujer
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="femenino"> Hombre
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="otro"> Personalizado
+                </label>
+            </div>
+            <div class="ultimo">
+                <br>
+                <p>Es posible que usuarios de nuestro servicio hayan subido tu información de contacto a Facebook. Más información.</p><br>
+                <p>Al hacer clic en Registrarte, aceptas las Condiciones, la Política de privacidad y la Política de cookies. Es posible que te enviemos notificaciones por SMS, que podrás desactivar cuando quieras.</p>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<footer>
+    <div class="footer-contents">
+        <ol>
+            <li>English (UK)</li>
+            <li><a href="#">മലയാളം</a></li>
+            <li><a href="#">தமிழ்</a></li>
+            <li><a href="#">తెలుగు</a></li>
+            <li><a href="#">বাংলা</a></li>
+            <li><a href="#">اردو</a></li>
+            <li><a href="#">हिन्दी</a></li>
+            <li><a href="#">ಕನ್ನಡ</a></li>
+            <li><a href="#">Español</a></li>
+            <li><a href="#">Português (Brasil)</a></li>
+            <li><a href="#">Français (France)</a></li>
+            <li><button>+</button></li>
+        </ol>
+
+        <ol>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Log In </a></li>
+            <li><a href="#">Messenger</a></li>
+            <li><a href="#">Facebook Lite</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Page categories</a></li>
+            <li><a href="#">Places</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">PayGroups</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Oculus</a></li>
+            <li><a href="#">Portal</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Local</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Log In </a></li>
+            <li><a href="#">Messenger</a></li>
+            <li><a href="#">Facebook Lite</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Page categories</a></li>
+            <li><a href="#">Places</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">PayGroups</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Oculus</a></li>
+            <li><a href="#">Portal</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Local</a></li>
+        </ol>
+        <small>Meta © 2023</small>
+    </div>
+</footer>
+</html>
